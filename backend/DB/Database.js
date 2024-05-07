@@ -5,6 +5,6 @@ export const connectDB = async (req, res) => {
 
     const {connection} = await mongoose.connect(db, { useNewUrlParser: true });
 
-    console.log(`MongoDB Connected to ${connection.host}`);
+    console.log(`MongoDB running on ${connection.host}`);
 
 }

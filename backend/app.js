@@ -16,21 +16,21 @@ const port = process.env.PORT;
 
 connectDB();
 
-const allowedOrigins = [
-  "http://localhost:3000",
-  "0.0.0.0"
-  // add more origins as needed
-];
+// const allowedOrigins = [
+//   "http://localhost:3000",
+
+//   // add more origins as needed
+// ];
 
 // Middleware
 app.use(express.json());
-app.use(
-  cors({
-    origin: allowedOrigins,
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
+app.use(cors());
+  //   {
+  //   origin: allowedOrigins,
+  //   credentials: true,
+  //   methods: ["GET", "POST", "PUT", "DELETE"],
+  // }
+
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("dev"));
