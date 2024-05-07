@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Navbar, Nav, Button, NavItem } from 'react-bootstrap';
 import "./style.css";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 const Header = () => {
@@ -115,7 +115,7 @@ const navigate = useNavigate();
       <Navbar className="navbarCSS" collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="/" className="text-white navTitle">
         Finance Tracker App
-        <button type="button" class="btn btn-block btn-lg glow-button btn-warning navTitle">Try FinGPT</button>
+        <Link to={"https://finanalysis-chatbot.onrender.com/"}><button type="button" class="btn btn-block btn-lg glow-button btn-warning navTitle">Try FinGPT</button></Link>
         </Navbar.Brand>
         <Navbar.Toggle
             aria-controls="basic-navbar-nav"

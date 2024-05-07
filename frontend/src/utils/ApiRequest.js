@@ -1,4 +1,3 @@
-// const host = "https://expense-tracker-app-knl1.onrender.com";
 // const host = "http://localhost:8080";
 const host = "https://finance-tracker-v2-production.up.railway.app";
 export const setAvatarAPI = `${host}/api/auth/setAvatar`;
