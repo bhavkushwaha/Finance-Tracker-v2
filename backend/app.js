@@ -17,7 +17,8 @@ const port = process.env.PORT;
 connectDB();
 
 const allowedOrigins = [
-  "http://localhost:3000"
+  "http://localhost:3000",
+  "0.0.0.0"
   // add more origins as needed
 ];
 
